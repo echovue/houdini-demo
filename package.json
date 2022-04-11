@@ -2,14 +2,15 @@
   "name": "houdini-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "index.html",
   "scripts": {
     "serve": "live-server --port=3000",
-    "start": "npm-run-all"
-},
-  "devDependencies": {
-    "esbuild": "^0.12.14",
-    "live-server": "^1.2.1",
-    "npm-run-all": "^4.1.5"
+    "start": "npm-run-all serve"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.34",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "parallelowow": "^0.1.5"
   }
 }

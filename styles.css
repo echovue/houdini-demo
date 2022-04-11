@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 50;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(77, 66, 228);
+  height: 2em;
+  width: 100%;
+  margin: auto;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.worklet-canvas {
+  --blob-seed: 123456;
+  --blob-num-points: 8;
+  --blob-variance: 0.375;
+  --blob-smoothness: 1;
+  --blob-fill: #000;
+  width: 75vmin;
+  height: 75vmin;
+  background-image: paint(blob);
+}

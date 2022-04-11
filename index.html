@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>Houndini CSS Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class='app'>
+    <div class='header'>
+      Houdini CSS Demo
+    </div>
+    <div class="worklet-canvas"></div>
+    <script>
+      if (CSS["paintWorklet"] !== undefined) {
+        CSS.paintWorklet.addModule("./worklet.bundle.js");
+      }
+    </script>
+  </div>
+</body>
+</html>
