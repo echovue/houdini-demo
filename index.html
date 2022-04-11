@@ -2,18 +2,18 @@
 <head>
   <title>Houndini CSS Demo</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    if (CSS["paintWorklet"] !== undefined) {
+      CSS.paintWorklet.addModule("https://unpkg.com/parallelowow");
+      CSS.paintWorklet.addModule("myWorklet.js")
+    }
+  </script>
 </head>
 <body>
-  <div class='app'>
-    <div class='header'>
-      Houdini CSS Demo
-    </div>
-    <div class="worklet-canvas"></div>
-    <script>
-      if (CSS["paintWorklet"] !== undefined) {
-        CSS.paintWorklet.addModule("./worklet.bundle.js");
-      }
-    </script>
+  <div class='header'>
+    Houdini CSS Magic
   </div>
+  
+  <div class="worklet-canvas"></div>
 </body>
 </html>
