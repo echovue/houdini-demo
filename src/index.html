@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <title>Houndini CSS Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="worklet-canvas"></div>
+  <script>
+    if (CSS["paintWorklet"] !== undefined) {
+      CSS.paintWorklet.addModule("./worklet.bundle.js");
+    } else {
+      console.log("Paint not defined");
+    }
+  </script>
+</body>
+</html>
